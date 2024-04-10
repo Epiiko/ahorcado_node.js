@@ -1,5 +1,6 @@
 body {
-  background-color: rgba(245, 245, 245, 0.882);
+  background-color: rgba(237, 237, 237, 0.762);
+  margin-top: 5%;
 }
 h1 {
   text-align: center;
@@ -21,8 +22,34 @@ h1 {
   margin: auto;
 }
 #palabra{
-  text-align: center;
+ width: 50%;
+ margin: auto;
+ margin-top: 5%;
+ display: flex;
+ justify-content: space-between;
+}
+.finalLetter{
+  border-bottom: 2px solid black;
+  width: 1rem;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+#fallos{
+  font-weight: bold;
+   text-align: center;
   margin-bottom: 2%;
+}
+#resultado{
+  background-color: rgb(255, 255, 255);
+  border: solid black 1px;
+  width: 100%;
+  margin-top: 5%;
+  height: 100px;
+  text-align: center;
+}
+#resultado code{
+  font-size: 1.2rem;
+  margin: auto
 }
 #letra{
   width: 20px;
@@ -37,5 +64,34 @@ h1 {
     display: none;
 }
 #nuevojuego{
-  margin: auto;
+  margin-left: 44%;
+  margin-top: 5%;
+}
+#howToPlay{
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10%;
+}
+img{
+ size: 50%;
+}
+#feedback{
+  font-size: 1.6rem;
+  color: red;
+  margin-top: 1%;
+  font-weight: bold;
+}
+.finalLetter{
+  color: green;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#fallos, #victorias{
+  color: rgb(255, 0, 0);
+  font-size: 1.5rem;
+   float: left; 
+  text-decoration: underline;
+  border: 5px solid black;
+  border-radius: 5%;
+  padding: 1%;
 }

@@ -15,14 +15,23 @@
   <body>
     <div class="container">
       <h1>Bienvenido al juego del ahorcado</h1>
+      <code id="howToPlay">En este juego debera insertar letras en el espacio disponible e ir acertando letras de la palabra
+         hasta completarla entera, antes de quedarse sin vidas</code>
       <div>
         <input type="button" value="Empezar juego" id="nuevojuego" />
       </div>
       <div class="container" id="juego">
         <div id="personaje">
-          <img src="" alt="placeholder" />
+          <img src="./multimedia/ahorcado0.png" alt="placeholder" />
         </div>
-        <div id="palabra">__ __ __ __ __</div>
+        <div id="fallos">0/8 Fallos</div>
+        <div id="palabra">
+          <div class="finalLetter"></div>
+          <div class="finalLetter"></div>
+          <div class="finalLetter"></div>
+          <div class="finalLetter"></div>
+          <div class="finalLetter"></div>
+        </div>
         <div id="hueco">
           <input
             type="text"
@@ -33,7 +42,10 @@
           />
         </div>
         <div id="confirmacion">
-          <input type="button" value="Validar letra" />
+          <input type="button" value="Validar letra" id="envio" />
+        </div>
+        <div id="resultado">
+          <p id="feedback">Introduzca una letra en el hueco y haga click en el boton para comprobar si la letra esta en la palabra</p>
         </div>
       </div>
     </div>
